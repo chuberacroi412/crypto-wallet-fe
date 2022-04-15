@@ -1,0 +1,84 @@
+.banner-wrapper {
+    background-color: #ff9065;
+    padding: 10px 125px;
+}
+
+.banner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-sub-menu{
+    display: flex;
+    column-gap: 50px;
+    color: white;
+    align-items: center;
+}
+
+.banner-sub-menu>p:hover{
+    color: #37474F;
+    cursor: pointer;
+}
+
+.banner-hub{
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color:white;
+    column-gap: 5px;
+}
+
+.banner-hub:hover {
+    border-color: #FFEE58;
+    cursor: pointer;
+    color: #FFEE58;
+}
+
+.banner-slogan-textarea {
+    width: 35%;
+    color: white;
+}
+
+.banner-slogan {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 50px 0 20px 0;
+}
+
+.banner-button-action {
+    display: flex;
+    column-gap: 20px;
+    margin: 20px;
+}
+
+.banner-button {
+    border: 1px solid #ffce6e;
+    padding: 16px 26px;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #F5F5F5;
+}
+
+.banner-button:hover {
+    border: 1px solid #FFEE58;;
+    color: #FFEE58;;
+}
+
+.banner-button-create {
+    background-color: #ffce6e;
+    color: #455A64;
+}
+
+.banner-button-create:hover {
+    background-color: #FFEE58;
+    color: #37474F;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}

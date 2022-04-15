@@ -1,0 +1,16 @@
+.logo{
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 90%;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo-text {
+    color: white
+}

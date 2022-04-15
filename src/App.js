@@ -1,11 +1,11 @@
 
 import './App.css';
-import Logo from './components/logo/Logo';
+import Banner from './components/banner/Banner';
 
 function App() {
   return (
     <div>
-      <Logo/>
+      <Banner/>
       <p>some text</p>
     </div>
   );
