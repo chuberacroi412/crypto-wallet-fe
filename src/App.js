@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       <Home/>
+      <p>Footer</p>
     </div>
   );
 }
