@@ -1,3 +1,26 @@
 .history {
     display: flex;
 }
+
+.history-left-content {
+    width: 20%;
+}
+
+/* .history-content {
+    padding: 15px;
+    background-color: #fafafa;
+    width: 80%;
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+} */
+
+.history-content {
+    padding: 15px;
+    background-color: #fafafa;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    
+}

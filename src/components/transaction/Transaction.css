@@ -1,0 +1,33 @@
+.transaction {
+    padding: 15px 25px;
+    background-color: aqua;
+    border-radius: 8px;
+    height: fit-content;
+    line-height: 25px;
+    background-color: white;
+}
+.transaction:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 1px #e0e0e0;
+}
+.block-info {
+    display: grid;
+    grid-template-columns: 35% auto;
+}
+
+.block-info-title {
+    font-weight: bold;
+    color: #424242;
+}
+
+.pendding {
+   
+    border: 2px solid #ffca28;
+    border-top: 20px solid #ffca28;
+}
+
+.complete {
+    border: 2px solid #8bc34a;
+    border-top: 20px solid #8bc34a;
+
+}
