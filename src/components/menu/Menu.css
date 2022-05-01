@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.menu-item {
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 25px;
+    color: #757575;
+}
+.menu-item:hover {
+    cursor: pointer;
+    color: #ff9065;
+}
+
+.menu-item-active {
+    background-color: #fbe9e7;
+    color: #D84315;
+}
+
+.menu-item-active:hover{
+    background-color: #fbe9e7;
+    color: #D84315
+}

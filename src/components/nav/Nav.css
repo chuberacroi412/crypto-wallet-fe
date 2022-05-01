@@ -1,0 +1,37 @@
+.nav{
+    display: flex;
+    width: 100vv;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px 0px 30px;
+}
+
+.nav-right-content {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.nav-text {
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #424242;
+}
+
+.nav-text:hover {
+    color: #ff9065;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+.nav-icon {
+    color: #424242;
+}
+
+.nav-icon:hover {
+    cursor: pointer;
+    color: #ff9065;
+}
+

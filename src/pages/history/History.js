@@ -1,13 +1,13 @@
 import Menu from '../../components/menu/Menu'
 import Nav from '../../components/nav/Nav'
-import './SendCoin.css'
+import './History.css'
 
-export default function SendCoin() {
+export default function History() {
     return (
         <>
             <Nav/>
-            <div className='send'>
-                <Menu send={true}/>
+            <div className='history'>
+                <Menu transaction={true}/>
             </div>
         </>
     )
