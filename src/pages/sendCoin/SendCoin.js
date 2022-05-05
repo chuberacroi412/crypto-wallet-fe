@@ -1,8 +1,39 @@
 import Menu from '../../components/menu/Menu'
 import Nav from '../../components/nav/Nav'
+import { useEffect, useState} from "react";
+import { useNavigate  } from 'react-router-dom';
 import './SendCoin.css'
 
 export default function SendCoin() {
+
+    const checkWalletExistedUrl = 'http://localhost:3001/user/wallet'
+
+    const [publicKey, setPublicKey] = useState('')
+    const [amount, setAmount] = useState(0)
+    const [toAddr, setToAddr] = useState('')
+    const checkHistoryUrl = 'http://localhost:3001/user/history'
+
+    const navigate = useNavigate()
+
+    useEffect(() => {
+
+        function CheckLogin() {
+            if(localStorage.getItem('userPublicKey') == null) {
+                navigate('/')
+            }
+            else {
+                setPublicKey(localStorage.getItem('userPublicKey'))
+            }
+        }
+
+        CheckLogin()   
+        
+    },[])
+
+    function SendButtonAction() {
+
+    }
+
     return (
         <>
             <Nav/>

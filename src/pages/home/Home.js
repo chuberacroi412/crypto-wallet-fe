@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 export default function Home() {
 
-    const [accessWalletDialog, setAccessWalletDialog] = useState(true)
+    const [accessWalletDialog, setAccessWalletDialog] = useState(false)
     const [createWalletDialog, setCreateWalletDialog] = useState(false)
 
     const accessWalletButton = () => {

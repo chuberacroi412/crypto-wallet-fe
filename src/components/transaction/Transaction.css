@@ -31,3 +31,9 @@
     border-top: 20px solid #8bc34a;
 
 }
+
+.block-info>p {
+    word-break: break-all;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
