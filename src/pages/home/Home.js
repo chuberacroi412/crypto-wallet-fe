@@ -20,8 +20,10 @@ export default function Home() {
 
     const createNewWalletButton = () => {
 
-        if(!accessWalletDialog)
+        if(!accessWalletDialog) {
             setCreateWalletDialog(!createWalletDialog)
+            alert('Register gift: system give you 10 ETH')
+        }
     }
 
     const closeAccessWalletDialog = () => {
