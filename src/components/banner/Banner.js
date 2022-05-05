@@ -2,7 +2,7 @@ import Logo from '../logo/Logo'
 import './Banner.css'
 import HubOutlinedIcon from '@mui/icons-material/HubOutlined';
 
-export default function Banner() {
+export default function Banner({accessWalletButtonAction, createNewWalletButtonAction}) {
     return (
         <div className='banner-wrapper'>
             <section className='banner-header '>
@@ -28,8 +28,8 @@ export default function Banner() {
                 </div>
             </section>
             <section className='banner-button-action'>
-                <button className='banner-button banner-button-create'>Create A New Wallet</button>
-                <button className='banner-button'>Access My Wallet</button>
+                <button className='banner-button banner-button-create' onClick={() => createNewWalletButtonAction()}>Create A New Wallet</button>
+                <button className='banner-button' onClick={() => accessWalletButtonAction()}>Access My Wallet</button>
             </section>
         </div>
     )

@@ -1,0 +1,52 @@
+.access-wallet-dialog {
+    text-align: center;
+    padding: 25px 50px;
+    width: 50%;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px 2px #ffccbc;
+}
+
+.access-wallet-dialog>div>input {
+    width: 50%;
+}
+
+.access-wallet-dialog-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #616161;
+}
+
+.access-wallet-dialog-button {
+    margin: 20px 20px 0px 20px;
+    padding: 10px 25px;
+    background-color: #ff9065;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    font-size: medium;
+}
+
+.access-wallet-dialog-button:hover {
+    cursor: pointer;
+    color: #FFEE58;
+    box-shadow: 2px 2px 5px 1px #eeeeee;
+}
+
+.access-wallet-dialog-button-close {
+    border: 1px solid #757575;
+    color: #757575;
+    background-color: transparent;
+}
+
+.access-wallet-dialog-button-close:hover {
+
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    background-color: #bdbdbd;
+}

@@ -1,0 +1,64 @@
+.create-wallet-dialog {
+    text-align: center;
+    padding: 25px 50px;
+    width: 50%;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px 2px #ffccbc;
+}
+
+.create-wallet-dialog>div>input {
+    width: 50%;
+}
+
+.create-wallet-dialog-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #616161;
+}
+
+.create-wallet-dialog-button {
+    margin: 20px 20px 0px 20px;
+    padding: 10px 25px;
+    background-color: #ff9065;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    font-size: medium;
+}
+
+.create-wallet-dialog-button:hover {
+    cursor: pointer;
+    color: #FFEE58;
+    box-shadow: 2px 2px 5px 1px #eeeeee;
+}
+
+.create-wallet-dialog-button-close {
+    border: 1px solid #757575;
+    color: #757575;
+    background-color: transparent;
+}
+
+.create-wallet-dialog-button-close:hover {
+
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    background-color: #bdbdbd;
+}
+
+.create-wallet-dialog-info-block {
+    margin-top: 20px;
+}
+
+.create-wallet-dialog-info-block>p {
+    word-break: break-all;
+}
+
+.create-wallet-dialog-info-block-title {
+    font-size: 18px;
+}

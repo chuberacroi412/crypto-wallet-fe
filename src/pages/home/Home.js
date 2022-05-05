@@ -1,13 +1,40 @@
 import './Home.css'
 import Banner from "../../components/banner/Banner";
 import Footer from "../../components/footer/Footer";
+import AccessWalletDialog from '../../components/accessWalletDialog/AccessWalletDialog';
+import CreateWalletDialog from '../../components/createWalletDialog/CreateWalletDialog';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
+import { useState } from 'react';
 
 
 export default function Home() {
+
+    const [accessWalletDialog, setAccessWalletDialog] = useState(true)
+    const [createWalletDialog, setCreateWalletDialog] = useState(false)
+
+    const accessWalletButton = () => {
+
+        if(!createWalletDialog)
+            setAccessWalletDialog(!accessWalletDialog)
+    }
+
+    const createNewWalletButton = () => {
+
+        if(!accessWalletDialog)
+            setCreateWalletDialog(!createWalletDialog)
+    }
+
+    const closeAccessWalletDialog = () => {
+        setAccessWalletDialog(false)
+    }
+
+    const closeCreateWalletDialog = () => {
+        setCreateWalletDialog(false)
+    }
+
     return (
         <div>
-            <Banner/>
+            <Banner accessWalletButtonAction={accessWalletButton} createNewWalletButtonAction={createNewWalletButton}/>
             <section className='home-section'>
                 <p className='home-section-title'>Features</p>
                 <p className='home-section-text'>Your Gateway to the <br/> Ethereum Blockchain</p>
@@ -58,6 +85,20 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {
+                accessWalletDialog 
+                && 
+                <>
+                    <AccessWalletDialog closeDialogButtonAction={closeAccessWalletDialog}/>
+                </>
+            }
+            {
+                createWalletDialog 
+                &&
+                <>
+                    <CreateWalletDialog closeDialogButtonAction={closeCreateWalletDialog}/>
+                </>
+            }
             <Footer/>
         </div>
     )
